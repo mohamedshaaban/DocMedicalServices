@@ -14,10 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::group(['prefix'=>'v1','namespace'=>'Api'],function(){
-    Route::post('patient_request_radiology','PatientController@patient_request_radiology');
-    Route::post('upload_radiology_prescription','PatientController@upload_radiology_prescription');
-    Route::post('patient_get_radiology_response','PatientController@get_radiology_response');
-    Route::post('patient_answer_radiology_question','PatientController@answer_radiology_question');
+    
 });
 Route::get('/user', function (Request $request) {
     return $request->user();

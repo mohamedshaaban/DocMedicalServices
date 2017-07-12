@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class servicefiles extends Model
 {
-    public $timestamps = false;
+    
         protected $table = 'ServiceFiles';
     
 

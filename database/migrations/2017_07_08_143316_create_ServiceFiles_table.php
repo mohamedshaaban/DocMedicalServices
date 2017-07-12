@@ -19,6 +19,7 @@ class CreateServiceFilesTable extends Migration
             $table->integer('service_id')->unsigned();
             $table->text('description');
             $table->boolean('is_active');
+            $table->timestamps();
             $table->foreign('service_id')->references('id')->on('Services');
         });
     }

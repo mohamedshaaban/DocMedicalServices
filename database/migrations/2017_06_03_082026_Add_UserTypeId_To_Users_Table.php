@@ -18,6 +18,7 @@ class AddUserTypeIdToUsersTable extends Migration
             $table->string('username')->unique();
             $table->string('email')->nullable()->change();
             $table->foreign('user_type_id')->references('id')->on('user_types');
+            
         });
     }
 

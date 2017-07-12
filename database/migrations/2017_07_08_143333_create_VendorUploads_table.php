@@ -22,7 +22,7 @@ class CreateVendorUploadsTable extends Migration
             $table->text('file');
             $table->integer('vendorservices_id')->unsigned();
             $table->boolean('is_approved');
-            
+            $table->timestamps();
             $table->foreign('service_files_id')->references('id')->on('ServiceFiles');
             $table->foreign('vendorservices_id')->references('id')->on('VendorServices');
         });

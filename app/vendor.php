@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class vendor extends Model
 {
-    public $timestamps = false;
+    
         protected $table = 'Vendor';
    
         public function vendorbranches(){

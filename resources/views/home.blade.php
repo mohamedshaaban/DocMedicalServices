@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
 
-    <p>{{trans('patientrequests.Dashboard')}}</p>
+    <p>{{trans('docservices.Dashboard')}}</p>
 
 @stop

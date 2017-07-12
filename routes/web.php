@@ -18,10 +18,7 @@ Route::group(['middleware'=>'auth'],function(){
 //    Route::any('user/create','UserController@create')->name('user.store');
 //    Route::get('user','UserController@index')->name('user.index');
     Route::resource('user', 'UserController');
-    Route::resource('patientrequests', 'PatientRequestController');
-    Route::resource('centerresponses', 'CenterResponseController');
-    Route::any('updateRefuse','PatientRequestController@updateRefuse')->name('patientrequests.updateRefuse');
-    Route::any('/answersAjax','CenterResponseController@answersAjax');
+  
     Route::resource('urlgroups', 'UrlGroupController');
     Route::resource('urls', 'UrlController');
     Route::resource('usertypes', 'UserTypeController');

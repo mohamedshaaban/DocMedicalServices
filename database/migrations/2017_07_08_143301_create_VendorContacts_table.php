@@ -22,6 +22,7 @@ class CreateVendorContactsTable extends Migration
             $table->text('phone');
             $table->text('mobile');
             $table->text('ex');
+            $table->timestamps();
             $table->integer('vendor_branch_id')->unsigned();
             
             

@@ -20,6 +20,7 @@ class CreateVendorTable extends Migration
            $table->text('reg');
            $table->text('website');
            $table->boolean('is_active');
+           $table->timestamps();
         });
     }
 

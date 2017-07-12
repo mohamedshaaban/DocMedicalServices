@@ -20,6 +20,7 @@ class CreateVendorBranchesTable extends Migration
             $table->text('address');
             $table->text('lon');
             $table->text('lat');
+            $table->timestamps();
             $table->foreign('vendor_id')->references('id')->on('Vendor');
             
         });
